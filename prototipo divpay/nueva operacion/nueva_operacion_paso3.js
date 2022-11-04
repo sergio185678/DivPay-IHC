@@ -24,7 +24,7 @@ function verificar(){
         moneda_recibir = localStorage.getItem("moneda_r");
         monto_recibir = localStorage.getItem("monto_r");
         let msg = "Se realizó la operación de forma correcta. En un momento, le transferiremos " + monto_recibir + " " + moneda_recibir +
-        " cuenta bancaria señalada.";
+        " a su cuenta bancaria.";
 
         alert(msg);
         limpiar();
