@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nueva_operacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DivPay</title>
+</head>
+<body>
+    <div class="banner"> 
+        <div class="backgroundnavbar">
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Nueva Operación</a></li>
+                    <li><a href="#">Tasas de cambio</a></li>
+                    <li><a href="#">Cuentas bancarias</a></li>
+                    <li><a href="#">Historial</a></li>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <a href="#"><img src="../img/notificacion.png" class="notificacion"></a>
+                <a href="#"><img src="../img/usuario.png" class="notificacion"></a>
+            </div>
+        </div>
+        <h1> Iniciar operación</h1>
+        <div class="content">
+            <div class="form">
+                <input type="text" id="cuentabancaria" class="input1" autocomplete="off" placeholder=" ">
+                <label for="cuentabancaria" class="label1">Cuenta bancaria donde desea recibir el cambio</label>
+            </div>
+            <div class="select">
+                <select name="moneda_e" id="moneda_e" onchange="comparar(id)">
+                    <option value="" disabled selected>Moneda a enviar</option>
+                    <option value="pen">PEN</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <div class="switch" onclick="intercambiar()">
+                <i class="fa fa-refresh" style="font-size:36px;"></i>
+            </div>
+            <div class="select2">
+                <select name="moneda_r" id="moneda_r" onchange="comparar(id)">
+                    <option value="" disabled selected>Moneda a recibir</option>
+                    <option value="pen">PEN</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <div class="form2">
+                <input type="number" id="monto" class="input2" autocomplete="off" placeholder=" " min="1" step="0.1" oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                <label for="monto" class="label2">Monto</label>
+                <input type="text" id="cupon" class="input3" autocomplete="off" placeholder=" ">
+                <label for="cupon" class="label3">¿Tienes un cupón de descuento?</label>
+            </div>
+            <div>
+                <label class="cuponaplicar" onclick="cupon_activar()"><span></span> Aplicar </label>
+            </div>
+            <div>
+                <button type="button" onclick="siguiente_paso()"><span></span> Empezar </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="nueva_operacion.js"></script>
+</html>

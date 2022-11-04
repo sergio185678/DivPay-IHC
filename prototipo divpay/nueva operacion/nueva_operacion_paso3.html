@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nueva_operacion_paso3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DivPay</title>
+</head>
+<body>
+    <div class="banner"> 
+        <div class="backgroundnavbar">
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Nueva Operación</a></li>
+                    <li><a href="#">Tasas de cambio</a></li>
+                    <li><a href="#">Cuentas bancarias</a></li>
+                    <li><a href="#">Historial</a></li>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <a href="#"><img src="../img/notificacion.png" class="notificacion"></a>
+                <a href="#"><img src="../img/usuario.png" class="notificacion"></a>
+            </div>
+        </div>
+        <h1>Verificar transferencia</h1>
+        <p>Necesitamos comprobar la transferencia para poder enviar el dinero cambiado a su cuenta bancaria seleccionada.</p>
+        <div class="content">
+            <div class="form">
+                <input type="text" id="op" class="input1" autocomplete="off" placeholder=" ">
+                <label for="op" class="label1">Número de operación de transferencia</label>
+                <i class="fa fa-eye" id="eye" onclick="ocultar()"></i>
+            </div>
+            <div>
+                <button type="button" class="next" onclick="verificar()"><span></span> Verificar mi transferencia </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="nueva_operacion_paso3.js"></script>
+</html>
