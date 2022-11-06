@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cuentasbancarias.css">
+    <title>DivPay</title>
+</head>
+<body>
+    <div class="banner"> 
+        <div class="backgroundnavbar">
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Nueva Operación</a></li>
+                    <li><a href="#">Tasas de cambio</a></li>
+                    <li><a href="#">Cuentas bancarias</a></li>
+                    <li><a href="#">Historial</a></li>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <a href="#"><img src="../img/notificacion.png" class="notificacion"></a>
+                <a href="#"><img src="../img/usuario.png" class="notificacion"></a>
+            </div>
+        </div>
+        <h1>Cuentas Bancarias</h1>
+        <p id="text"></p>
+        <div class="content">
+            <section class="divpayinfo">
+                <table class="datanames">
+                    <tr>
+                        <td class="names">Banco</td>
+                        <td class="names">Moneda</td>
+                        <td class="names">Tipo</td>
+                        <td class="names">N° de cuenta</td>
+                    </tr>
+                </table>
+                <table class="data1">
+                    <td class="data">BCP</td>
+                    <td class="data">Dólares</td>
+                    <td class="data">Corriente</td>
+                    <td class="data">78954323</td>
+                </table>
+                <table class="data2">
+                    <td class="data">BBVA</td>
+                    <td class="data">Soles</td>
+                    <td class="data">Corriente</td>
+                    <td class="data">45675432</td>
+                </table>
+                <table class="data3">
+                    <td class="data">Interbank</td>
+                    <td class="data">Dólares</td>
+                    <td class="data">Ahorro</td>
+                    <td class="data">675681221</td>
+                </table>
+            </section> 
+            <div>
+                <a href="agregar.html"><button type="button" class="next"><span></span> + Agregar </button></a>
+                <a href="cuentasbancarias.html"><img src="../img/delete.png" class="delete1" onclick="eliminar1()"></a>
+                <a href="cuentasbancarias.html"><img src="../img/delete.png" class="delete2" onclick="eliminar2()"></a>
+                <a href="cuentasbancarias.html"><img src="../img/delete.png" class="delete3" onclick="eliminar3()"></a>
+                <a href="editar.html"><img src="../img/edit.png" class="edit1"></a>
+                <a href="editar.html"><img src="../img/edit.png" class="edit2"></a>
+                <a href="editar.html"><img src="../img/edit.png" class="edit3"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="delete.js"></script>
+</html>
