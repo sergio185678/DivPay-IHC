@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_historial.css">
+    <title>DivPay</title>
+</head>
+<body>
+    <div class="backgroundnavbar">
+        <div class="navbar">
+            <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+            <ul>
+                <li><a href="../nueva operacion/nueva_operacion.html">Nueva Operación</a></li>
+                <li><a href="#">Tasas de cambio</a></li>
+                <li><a href="../cuentas bancarias/cuentasbancarias.html">Cuentas bancarias</a></li>
+                <li><a href="../Historial/historial.html">Historial</a></li>
+                <li><a href="../cod_invitacion/invitacion.html">Beneficios</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <a href="../Notificaciones/notificaciones.html"><img src="../img/notificacion.png" class="notificacion"></a>
+            <div class="dropdown">
+                <img src="../img/usuario.png" class="notificacion">
+            <div class="dropdown-content">
+                <a href="../ver perfil/perfil.html" id="perfilll">Mi perfil</a>
+                <a href="../login y registro/login.html" id="loginn">Log in</a>
+                <a href="#" id="cerrar">Cerrar sesión</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        logueado=localStorage.getItem("logueado");
+        if(logueado==null){
+            document.getElementById("perfilll").style.display = "none";
+            document.getElementById("cerrar").style.display = "none";
+        }
+        else{
+            document.getElementById("loginn").style.display = "none";
+        }
+    </script>
+    <div class="historial_contenido">
+        <div class="head_historial">
+            <h1>Historial de operaciones</h1>
+        </div>
+        <div class="filtro">
+            <input type="date" class="select_date">
+            <input type="date" class="select_date">
+            <button class="btn_historial1">Filtrar</button>
+        </div>
+        <div class="botones">
+            <button class="btn_historial2">En proceso</button>
+            <button class="btn_historial">Finalizadas</button>
+        </div>
+        <div class="datos_historial">
+            <div class="head_list">
+                <p> 
+                    N° operación
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Envía
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Recibe
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha
+                </p>
+            </div>
+            <div class="operacion">
+                <p> 
+                    45557124
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 650 PEN
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 168 USD
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 13/09/22
+                </p>
+            </div>
+            <div class="operacion">
+                <p> 
+                    45557124
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 650 PEN
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 168 USD
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 13/09/22
+                </p>
+            </div>
+            <div class="operacion">
+                <p> 
+                    45557124
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 650 PEN
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 168 USD
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 13/09/22
+                </p>
+            </div>
+            <div class="operacion">
+                <p> 
+                    45557124
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 650 PEN
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 168 USD
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 13/09/22
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

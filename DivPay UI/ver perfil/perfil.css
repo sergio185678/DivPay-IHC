@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #414141;
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    color: #009688;
+    font-weight:lighter;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.backgroundnavbar{
+    background-color: rgb(177, 174, 174);
+    background-origin: content-box;
+}
+.logo{
+    width: 7%;
+    max-width:750px;
+    min-width:100px;
+}
+.notificacion{
+    width: 2%;
+    max-width:70px;
+    min-width:40px;
+    position: relative;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow:auto;
+    box-shadow: 0px 10px 10px 0px #000000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  .dropdown-content a:hover {
+    color: #F9C258;
+    background-color: #00A4BD;
+  }
+
+
+#imgperfil{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 147px/2);
+    top: 180px;
+}
+#nombreusuario{
+    position: absolute;
+    width: 151px;
+    height: 40px;
+    left: calc(50% - 151px/2);
+    top: 360px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height, or 118% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#informacion{
+    position: absolute;
+    width: 700px;
+    height: 1000px;
+    left: calc(50% - 685px/2);
+    top: 150px;
+}
+#fondo{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 28.72%;
+    bottom: 30.2%;
+
+    background: #E3E3E3;
+    border: 2px solid #F9C258;
+    border-radius: 20px;
+}
+#titulo{
+    position: absolute;
+    width: 165px;
+    left: calc(50% - 165px/2 - 0.5px);
+    top: 30.36%;
+    bottom: 51.76%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 16px;
+    /* identical to box height, or 76% */
+
+    text-align: justify;
+
+    color: #000000;
+}
+#linia0{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 34.72%;
+    bottom: 65.28%;
+
+
+    border: 2px solid #F9C258;
+}
+.subtitulo{
+    position: absolute;
+    left: 41px;
+    right: 255px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: justify;
+
+    color: #000000;
+}
+.texto{
+    position: absolute;
+    left: 41px;
+    right: 108px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    text-align: justify;
+
+    color: #000000;
+}
+#linia1{
+    position: absolute;
+    left: 41px;
+    right: 41px;
+    top: 44%;
+    bottom: 56%;
+
+    border: 1px solid #797979;
+}
+#subt1{
+    top: 38.41%;
+}
+#text1{
+    top: 41.34%;
+}
+#subt2{
+    top: 45.33%;
+}
+#text2{
+    top: 48.97%;
+}
+#subt3{
+    top: 54.25%;
+}
+#text3{
+    top: 57.89%;
+}
+#subt4{
+    top: 62.35%;
+}
+#text4{
+    top: 65.99%;
+}
+#linia2{
+    position: absolute;
+    left: 41px;
+    right: 41px;
+    top: 51.44%;
+    bottom: 51.44%;
+
+    border: 1px solid #797979;
+}
+#linia3{
+    position: absolute;
+    left: 41px;
+    right: 41px;
+    top: 60.36%;
+    bottom: 60.36%;
+    
+    border: 1px solid #797979;
+}
+#linia4{
+    position: absolute;
+    left: 41px;
+    right: 41px;
+    top: 68.46%;
+    bottom: 68.54%;
+    
+    border: 1px solid #797979;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <title>DivPay</title>
+    </head>
+<body>
+    <img src="../img/logo_divpay2.png">
+    <div id="iniciosesion">
+        <h1>Iniciar Sesión</h1>
+        <hr>
+    </div>
+    <div id="correo">
+        <h2>Correo electrónico</h2>
+        <input type="text" placeholder="Escribe tu email" id="email">
+    </div>
+    <div id="contra">
+        <h2>Contraseña</h2>
+        <input type="text" placeholder="Escribe tu contraseña" id="contraaa">
+    </div>
+    <h4 id="incorrecto">El correo electrónico o la contraseña no son correctos. Vuelve a intentarlo.</h4>
+    <a href="../index.html" onclick="loguear()"><div id="boton"><h3> Continuar</h3></div></a>
+    
+    <a href="registro.html"><div id="aaaa"><h3>¿No tienes cuenta? Registrate aqui</h3></div></a> 
+    
+    <script type="text/javascript">
+        function loguear(){
+            localStorage.setItem('logueado', 'si');
+        }
+        
+    </script>
+</body>
+</html>

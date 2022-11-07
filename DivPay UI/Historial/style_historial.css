@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.backgroundnavbar{
+    background-color: rgb(177, 174, 174);
+    background-origin: content-box;
+}
+.logo{
+    width: 7%;
+    max-width:750px;
+    min-width:100px;
+}
+.notificacion{
+    width: 2%;
+    max-width:70px;
+    min-width:40px;
+    position: relative;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/*css historial*/
+.historial_contenido{
+    background-color: #414141;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 137.96px;
+    bottom: 0%;
+}
+.filtro{
+    margin-left: 20%;
+}
+.botones{
+    margin-left: 7%;
+}
+.head_historial{
+    color: #F9C258;
+    text-align: center;
+    padding: 10px;
+}
+.btn_historial1{
+    margin-left: 150px;
+    border-color: #009688;
+    border-radius: 15px;
+}
+.btn_historial2{
+    margin-left: 34%;
+    border-color: #F9C258;
+    border-radius: 15px;
+}
+.btn_historial{
+    border-color: #F9C258;
+    border-radius: 15px;
+}
+.btn_historial:hover {
+    background-color: #F9C258;
+}
+.btn_historial2:hover{
+    background-color: #F9C258;
+}
+.btn_historial1:hover{
+    background-color: #009688;
+}
+.btn_historial:focus {
+    background-color: #F9C258;
+}
+.btn_historial2:focus{
+    background-color: #F9C258;
+}
+.btn_historial1:focus{
+    background-color: #009688;
+}
+.select_date{
+    width: 200px;
+    height: 40px;
+    margin-left: 150px;
+    border-radius: 10px;
+    border-color: #F9C258;
+}
+.datos_historial{
+    margin: 15px;
+}
+.head_list{
+    width: auto;
+    height: auto;
+    background-color: #F9C258;
+    border: 2px solid #F9C258;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-right: 160px;
+    color: #fff;
+}
+.head_list p{
+    text-align: center;
+    font-size: 18px;
+}
+.operacion p{
+    text-align: center;
+    font-size: 16px;
+}
+.operacion{
+    background-color: transparent;
+    border: 2px solid #F9C258;
+    border-radius: 5px;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-right: 160px;
+    padding: 10px;
+    color: #F9C258;
+}
+h3{
+    float:left;
+    text-align: center;
+}
+h4{
+    float:left;
+    text-align: center;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow:auto;
+    box-shadow: 0px 10px 10px 0px #000000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  .dropdown-content a:hover {
+    color: #F9C258;
+    background-color: #00A4BD;
+  }

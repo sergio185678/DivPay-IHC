@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nueva_operacion_paso3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DivPay</title>
+</head>
+<body>
+        <div class="backgroundnavbar">
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+                <ul>
+                    <li><a href="../nueva operacion/nueva_operacion.html">Nueva Operación</a></li>
+                    <li><a href="#">Tasas de cambio</a></li>
+                    <li><a href="../cuentas bancarias/cuentasbancarias.html">Cuentas bancarias</a></li>
+                    <li><a href="../Historial/historial.html">Historial</a></li>
+                    <li><a href="../cod_invitacion/invitacion.html">Beneficios</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <a href="../Notificaciones/notificaciones.html"><img src="../img/notificacion.png" class="notificacion"></a>
+                <div class="dropdown">
+                    <img src="../img/usuario.png" class="notificacion">
+                <div class="dropdown-content">
+                    <a href="../ver perfil/perfil.html" id="perfilll">Mi perfil</a>
+                    <a href="../login y registro/login.html" id="loginn">Log in</a>
+                    <a href="#" id="cerrar">Cerrar sesión</a>
+                </div>
+                </div>
+        </div>
+        <script type="text/javascript">
+            logueado=localStorage.getItem("logueado");
+            if(logueado==null){
+                document.getElementById("perfilll").style.display = "none";
+                document.getElementById("cerrar").style.display = "none";
+            }
+            else{
+                document.getElementById("loginn").style.display = "none";
+            }
+        </script>
+        <h1>Verificar transferencia</h1>
+        <p>Necesitamos comprobar la transferencia para poder enviar el dinero cambiado a su cuenta bancaria seleccionada.</p>
+        <div class="content">
+            <div class="form">
+                <input type="text" id="op" class="input1" autocomplete="off" placeholder=" ">
+                <label for="op" class="label1">Número de operación de transferencia</label>
+                <i class="fa fa-eye" id="eye" onclick="ocultar()"></i>
+            </div>
+            <div>
+                <button type="button" class="next" onclick="verificar()"><span></span> Verificar mi transferencia </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="nueva_operacion_paso3.js"></script>
+</html>
