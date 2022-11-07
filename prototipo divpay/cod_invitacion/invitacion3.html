@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/cod_invitacion/style_invit.css">
+    <link rel="stylesheet" href="style_invit.css">
     <title>DivPay</title>
 </head>
 <body>
     <div class="backgroundnavbar">
         <div class="navbar">
-            <a href="/index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+            <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
             <ul>
-                <li><a href="#">Nueva Operación</a></li>
-                 <li><a href="#">Tasas de cambio</a></li>
-                 <li><a href="#">Cuentas bancarias</a></li>
-                 <li><a href="/Historial/historial.html">Historial</a></li>
-                 <li><a href="/cod_invitacion/invitacion.html">Beneficios</a></li>
+                <li><a href="../nueva operacion/nueva_operacion.html">Nueva Operación</a></li>
+                <li><a href="#">Tasas de cambio</a></li>
+                <li><a href="../cuentas bancarias/cuentasbancarias.html">Cuentas bancarias</a></li>
+                <li><a href="../Historial/historial.html">Historial</a></li>
+                <li><a href="../cod_invitacion/invitacion.html">Beneficios</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <a href="/Notificaciones/notificaciones.html"><img src="../img/notificacion1.png" class="notificacion"></a>
-            <a href="#"><img src="../img/usuario.png" class="notificacion"></a>
+            <a href="../Notificaciones/notificaciones.html"><img src="../img/notificacion.png" class="notificacion"></a>
+            <div class="dropdown">
+                <img src="../img/usuario.png" class="notificacion">
+            <div class="dropdown-content">
+                <a href="../ver perfil/perfil.html" id="perfilll">Mi perfil</a>
+                <a href="../login y registro/login.html" id="loginn">Log in</a>
+                <a href="#" id="cerrar">Cerrar sesión</a>
+            </div>
+            </div>
         </div>
     </div>
+    <script type="text/javascript">
+        logueado=localStorage.getItem("logueado");
+        if(logueado==null){
+            document.getElementById("perfilll").style.display = "none";
+            document.getElementById("cerrar").style.display = "none";
+        }
+        else{
+            document.getElementById("loginn").style.display = "none";
+        }
+    </script>
+    
     <div class="contenido_invit">
         <div class="head_inv">
             <h1>Mis Beneficios</h1>
@@ -39,7 +57,7 @@
         <div class="cod_invit">
             <p>Tu código</p>
             <h3 class="cod">MYDP312</h3>
-            <a href="/cod_invitacion/invitacion2.html"><img src="/img/check_verde.png" class="check_verde"></a>
+            <a href="/cod_invitacion/invitacion2.html"><img src="../img/check_verde.png" class="check_verde"></a>
         </div>
         <button class="btn_invitar">Reclamar</button>
     </div>

@@ -10,6 +10,15 @@
     background-size: cover;
     background-position: center;
 }
+.banner h1{
+    color: #009688;
+    font-weight:lighter;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
 .navbar{
     width: 85%;
     margin: auto;
@@ -59,6 +68,33 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow:auto;
+    box-shadow: 0px 10px 10px 0px #000000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  .dropdown-content a:hover {
+    color: #F9C258;
+    background-color: #00A4BD;
+  }
+
+
 #imgperfil{
     position: absolute;
     width: 150px;
@@ -89,7 +125,7 @@
     width: 700px;
     height: 1000px;
     left: calc(50% - 685px/2);
-    top: 0px;
+    top: 150px;
 }
 #fondo{
     box-sizing: border-box;
@@ -97,8 +133,8 @@
     position: absolute;
     left: 20px;
     right: 20px;
-    top: 44.72%;
-    bottom: 16.2%;
+    top: 28.72%;
+    bottom: 30.2%;
 
     background: #E3E3E3;
     border: 2px solid #F9C258;
@@ -108,7 +144,7 @@
     position: absolute;
     width: 165px;
     left: calc(50% - 165px/2 - 0.5px);
-    top: 46.36%;
+    top: 30.36%;
     bottom: 51.76%;
 
     font-family: 'Roboto';
@@ -126,8 +162,9 @@
     position: absolute;
     left: 20px;
     right: 20px;
-    top: 50%;
-    bottom: 50%;
+    top: 34.72%;
+    bottom: 65.28%;
+
 
     border: 2px solid #F9C258;
 }
@@ -167,41 +204,41 @@
     position: absolute;
     left: 41px;
     right: 41px;
-    top: 56.81%;
-    bottom: 43.19%;
+    top: 44%;
+    bottom: 56%;
 
     border: 1px solid #797979;
 }
 #subt1{
-    top: 51.41%;
+    top: 38.41%;
 }
 #text1{
-    top: 54.34%;
+    top: 41.34%;
 }
 #subt2{
-    top: 58.33%;
+    top: 45.33%;
 }
 #text2{
-    top: 61.97%;
+    top: 48.97%;
 }
 #subt3{
-    top: 67.25%;
+    top: 54.25%;
 }
 #text3{
-    top: 70.89%;
+    top: 57.89%;
 }
 #subt4{
-    top: 75.35%;
+    top: 62.35%;
 }
 #text4{
-    top: 78.99%;
+    top: 65.99%;
 }
 #linia2{
     position: absolute;
     left: 41px;
     right: 41px;
-    top: 64.44%;
-    bottom: 35.56%;
+    top: 51.44%;
+    bottom: 51.44%;
 
     border: 1px solid #797979;
 }
@@ -209,8 +246,8 @@
     position: absolute;
     left: 41px;
     right: 41px;
-    top: 73.36%;
-    bottom: 26.64%;
+    top: 60.36%;
+    bottom: 60.36%;
     
     border: 1px solid #797979;
 }
@@ -218,8 +255,8 @@
     position: absolute;
     left: 41px;
     right: 41px;
-    top: 81.46%;
-    bottom: 18.54%;
+    top: 68.46%;
+    bottom: 68.54%;
     
     border: 1px solid #797979;
 }
