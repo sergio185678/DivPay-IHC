@@ -99,108 +99,83 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
-/*button:hover span{
-    width: 100%;
-}
-button:hover{
-    border: none;
-}
-1260px
-570px
-/*Styles notificaciones.html*/
-.notif{
+
+/*Styles invit*/
+.contenido_invit{
     background-color: #414141;
-    padding: 10px;
-    width: 1243.2px;
-    height: 100%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 137.94px;
+    bottom: 0%;
 }
-.head_notif{
-    padding: 20px;
-}
-.head_notif h1{
-    text-align: center;
+.head_inv{
     color: #F9C258;
-}
-.boton1{
     text-align: center;
-    border: 1px solid #F9C258;
-    background-color: transparent;
-    margin-left: 58vh;
+    padding: 10px;
 }
-.boton2{
+h2{
+    color: #3DFF67;
     text-align: center;
-    border: 1px solid #F9C258;
-    background-color: transparent;
+    padding: 10px;
 }
-.boton1:focus{
+h3{
+    color: #F9C258;
     text-align: center;
-    border: 1px solid #F9C258;
-    background-color: #F9C258;
+    padding: 5px;
 }
-.boton2:focus{
+p{
+    color: #fff;
     text-align: center;
-    border: 1px solid #F9C258;
-    background-color: #F9C258;
+    padding: 13px;
 }
-.icono-notif{
-    width: 20px;
-    height: 20px;
-    padding: 12px;
+.pasos_benef{
+    float: inherit;
+}
+.paso1{
+    width: 50%;
     float: left;
 }
-.msj1{
-    margin: 15px;
-    background-color: #F9C258;
-    border-radius: 18px;
-    padding: 20px;
-    width: 1000px;
-    margin-left: 110px;
+.paso2{
+    width: 50%;
+    float: right;
 }
-.msj2{
-    margin: 15px;
-    background-color: #F9C258;
-    border-radius: 18px;
-    padding: 20px;
-    width: 1000px;
-    margin-left: 110px;
+.paso_img{
+    width: 50px;
+    height: 50px;
+    margin-left: 46.5%;
+    padding: 5px;
 }
-.msj3{
-    margin: 15px;
-    background-color: #F9C258;
-    border-radius: 18px;
-    padding: 20px;
-    width: 1000px;
-    margin-left: 110px;
+.btn_invitar{
+    margin-left: 44%;
+    border-color: #F9C258;
+    border-radius: 15px;
 }
-.msj4{
-    margin: 15px;
+.btn_invitar:hover{
     background-color: #F9C258;
-    border-radius: 18px;
-    padding: 20px;
-    width: 1000px;
-    margin-left: 110px;
 }
-.icono-check{
+.cod_invit{
+    width: 220px;
+    height: 100px;
+    border: 2px solid #F9C258;
+    border-radius: 15px;
+    margin: 50px;
+    margin-left: 43.5%;
+}
+.cod{
+    float: left;
+    padding: 15px;
+}
+.copy_cod{
+    float: right;
+    cursor: pointer;
+}
+.check_verde{
     width: 30px;
     height: 30px;
+    margin-left: 45px;
 }
-.desc_notif{
-    text-align: left;
-    font-size: 16px;
-    padding:5px 50px;
-    color: #fff;
-}
-.time_notif{
-    font-size: 13px;
-    padding: 5px 55px;
-    color: #fff;
-}
-#noleidas_notif{
-    left: 110px;
-}
-#todas_notif{
-    left: 1290px;
-}
+
 .dropdown {
     display: inline-block;
     position: relative;

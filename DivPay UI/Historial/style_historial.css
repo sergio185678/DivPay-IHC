@@ -103,8 +103,17 @@ span{
 /*css historial*/
 .historial_contenido{
     background-color: #414141;
-    width: 100%;
-    height: 590px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 137.96px;
+    bottom: 0%;
+}
+.filtro{
+    margin-left: 20%;
+}
+.botones{
+    margin-left: 7%;
 }
 .head_historial{
     color: #F9C258;
