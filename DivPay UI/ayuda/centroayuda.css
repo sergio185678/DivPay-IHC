@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 150vh;
+    background-color: #e8f5fa;
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    color: #009688;
+    font-weight:lighter;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.backgroundnavbar{
+    background-color: rgb(177, 174, 174);
+    background-origin: content-box;
+}
+.logo{
+    width: 7%;
+    max-width:750px;
+    min-width:100px;
+}
+.notificacion{
+    width: 2%;
+    max-width:70px;
+    min-width:40px;
+    position: relative;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow:auto;
+    box-shadow: 0px 10px 10px 0px #000000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  .dropdown-content a:hover {
+    color: #F9C258;
+    background-color: #00A4BD;
+  }
+
+/*  ------------*/
+#superior{
+    position: absolute;
+    width: 100%;
+    height: 415px;
+    top: 148px;
+}
+#superior h1{
+    position: relative;
+    width: 492px;
+    height: 16px;
+    left: calc(50%);
+    top: calc(50% + 400px/2 - 373px);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 16px;
+    /* identical to box height, or 40% */
+
+    text-align: justify;
+
+    color: #0139FF;
+
+}
+#superior input{
+    position: relative;
+    width: 500px;
+    height: 80px;
+    left: calc(50% - 590px/2 + 33.5px);
+    top: calc(50% + 350px/2 - 276px);
+    border: 2px solid #3f3f3f;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #000000;
+}
+#lupa{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 750px/2 + 33.5px);
+    top: calc(50% + 380px/2 - 276px);
+}
+.cuadro{
+    position: absolute;
+    width: 200px;
+    height: 210px;
+    top: calc(50% + 680px/2 - 276px);
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+#cuadro1{
+    left: calc(50% - 900px/2 + 33.5px);
+    background: #0139FF;
+}
+#cuadro1 h2{
+    color: #fff;
+}
+#cuadro2{
+    left: calc(50% - 300px/2 + 33.5px);
+}
+#cuadro3{
+    left: calc(50% + 300px/2 + 33.5px);
+}
+.cuadro img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: calc(50% - 140px/2 + 33.5px);
+    top: calc(50% + 360px/2 - 276px);
+}
+.cuadro h2{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    top: calc(50% + 400px/2 - 276px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 50% */
+
+    text-align: center;
+}
+.collapsible {
+    background-color: rgb(172, 172, 172);
+    color: white;
+    cursor: pointer;
+    padding: 40px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    border-radius: 30px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+#preguntas{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: calc(50% - 1100px/2 + 33.5px);
+    top: calc(50% + 1100px/2 - 276px);
+}
+.content p{
+    font-size: 30px;
+}
