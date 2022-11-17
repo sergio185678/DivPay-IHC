@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cuentasbancarias.css">
+    <link rel="stylesheet" href="tasas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DivPay</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
                 <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
                 <ul>
                     <li><a href="../nueva operacion/nueva_operacion.html">Nueva Operación</a></li>
-                    <li><a href="../tasasdecambio/tasas.html">Tasas de cambio</a></li>
+                    <li><a href="#">Tasas de cambio</a></li>
                     <li><a href="../cuentas bancarias/cuentasbancarias.html">Cuentas bancarias</a></li>
                     <li><a href="../Historial/historial.html">Historial</a></li>
                     <li><a href="../cod_invitacion/invitacion.html">Beneficios</a></li>
@@ -41,29 +42,45 @@
                 document.getElementById("loginn").style.display = "none";
             }
         </script>
-        
-        <h1>Editar Cuenta</h1>
-        <p id="text"></p>
+        <h1> Tasas de cambio</h1>
         <div class="content">
-            <section>
-                <div class="input1">
-                    <input type="text" placeholder="Banco">
-                </div>
-                <div class="input2">
-                    <input type="text" placeholder="Moneda">
-                </div>
-                <div class="input3">
-                    <input type="text" placeholder="Tipo de cuenta">
-                </div>
-                <div class="input4">
-                    <input type="text" placeholder="N° de cuenta">
-                </div>
-            </section>
+            <div class="select">
+                <select name="moneda_e" id="moneda_e" onchange="comparar(id)">
+                    <option value="" disabled selected>Moneda a enviar</option>
+                    <option value="pen">PEN</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <div class="switch" onclick="intercambiar()">
+                <i class="fa fa-refresh" style="font-size:36px;"></i>
+            </div>
+            <div class="select2">
+                <select name="moneda_r" id="moneda_r" onchange="comparar(id)">
+                    <option value="" disabled selected>Moneda a recibir</option>
+                    <option value="pen">PEN</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+            <div class="form2">
+                <input type="number" id="monto" class="input2" autocomplete="off" placeholder=" " min="1" step="0.1" oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+                <label for="monto" class="label2">Monto</label>
+            </div>
+
+            <div class="respuesta">
+                <label id="tipodecambio"></label>
+                <label id="num1"></label>
+                <br><br>
+                <label id="recibido"></label>
+                <label id="num2"></label>
+            </div>
             <div>
-                <a href="cuentasbancarias.html"><button type="button" class="next" onclick="guardarcambios()"><span></span> Confirmar cambios </button></a>
-            </div> 
+                <button type="button" onclick="siguiente_paso()"><span></span> Visualizar </button>
+            </div>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="delete.js"></script>
+<script type="text/javascript" src="tasas.js"></script>
 </html>
