@@ -27,6 +27,7 @@ function App() {
       <Calculadora
       image1={cal_imagen1}
       image2={cal_imagen2}
+      image3={cal_imagen1}
       />
       <ComoFunciona
       image={com_imagen} 
