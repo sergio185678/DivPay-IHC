@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="centroayuda.css">
+    <title>DivPay</title>
+</head>
+<body>
+    <div class="banner"> 
+        <div class="backgroundnavbar">
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo_divpay2.png" class="logo"></a>
+                <ul>
+                    <li><a href="../nueva operacion/nueva_operacion.html">Nueva Operación</a></li>
+                    <li><a href="../tasasdecambio/tasas.html">Tasas de cambio</a></li>
+                    <li><a href="../cuentas bancarias/cuentasbancarias.html">Cuentas bancarias</a></li>
+                    <li><a href="../Historial/historial.html">Historial</a></li>
+                    <li><a href="../cod_invitacion/invitacion.html">Beneficios</a></li>
+                    <li><a href="../ayuda/centroayuda.html">Ayuda</a></li>
+                </ul>
+                <a href="../Notificaciones/notificaciones.html"><img src="../img/notificacion.png" class="notificacion"></a>
+                <div class="dropdown">
+                    <img src="../img/usuario.png" class="notificacion">
+                <div class="dropdown-content">
+                    <a href="../ver perfil/perfil.html" id="perfilll">Mi perfil</a>
+                    <a href="../login y registro/login.html" id="loginn">Log in</a>
+                    <a href="#" id="cerrar">Cerrar sesión</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="superior">
+            <h1>¿Cómo podemos ayudarte?</h1>
+            <input type="text" placeholder="Buscar">
+            <img src="../img/lupa.png" id="lupa">
+            <div id="cuadro1" class="cuadro">
+                <img src="../img/foco blanco.png">
+                <h2>Sobre DivPay</h2>
+            </div>
+            <div id="cuadro2" class="cuadro">
+                <img src="../img/moneda.png">
+                <h2>Cambio de Divisas</h2>
+            </div>
+            <div id="cuadro3" class="cuadro">
+                <img src="../img/interrogación.png">
+                <h2>Necesito ayuda</h2>
+            </div>
+            
+        </div>
+        <div id="preguntas">
+            <button class="collapsible">¿Que es DivPay?</button>
+            <div class="content">
+                <br><p>Somos una plataforma digital de cambio de soles, dólares y euros de manera segura, y contamos con el mejor tipo de cambio.</p><br>
+            </div>
+            <br><br>
+            <button class="collapsible">¿Donde descargo DivPay?</button>
+            <div class="content">
+                <br><p>Contamos con una página web, pero también nos puedes encontrar el la Google Play y en la Appstore</p><br>
+            </div>
+            <br><br>
+            <button class="collapsible">¿Que servicios ofrece DivPay?</button>
+            <div class="content"><br>
+              <p>- Realizamos cambio de divisas dentro del territorio peruano utilizando cuentas bancarias de bancos que se encuentran en
+                Perú, donde las divisas que pueden cambiar son soles, dólares e incluso euros.
+                <br><br>- Ofrecemos descuentos en tiendas afiliadas y en nuestra aplicación con tan solo realizar cambios de divisas dentro de nuestra app.
+                <br><br>- Tener control de tu historial de operaciones y de tus cuentas bancarias.</p>
+                <br></div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>
